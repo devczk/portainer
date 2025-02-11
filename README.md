@@ -43,3 +43,6 @@ O Portainer pode ser instalado através do docker-compose.yml (arquivo presente 
 docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest
 
 Após utilizar o docker run, o serviço ficará acessível na porta configurada no arquivo yml, de acordo com o docker run irá iniciar no https://localhost:9443
+
+![image](https://github.com/user-attachments/assets/2d7b5e6c-189e-4c97-82f7-aa76e976a0a7)
+
