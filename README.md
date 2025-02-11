@@ -36,3 +36,10 @@ sudo systemctl enable docker
 
 sudo systemctl start docker
 
+
+## Configuração do Portainer
+O Portainer pode ser instalado através do docker-compose.yml (arquivo presente neste repositório) ou através do docker run abaixo:
+
+docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest
+
+Após utilizar o docker run, o serviço ficará acessível na porta configurada no arquivo yml, de acordo com o docker run irá iniciar no https://localhost:9443
